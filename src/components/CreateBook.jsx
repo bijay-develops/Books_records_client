@@ -12,8 +12,9 @@ import { useNavigate } from "react-router-dom";
     isbn: "",
     author: "",
     description: "",
-    published_date: "",
-    publisher: "",
+    issued_Date:"",
+    recipient:"",
+    contact_no:"",
   });
 
   const onChange = (e) => {
@@ -30,8 +31,9 @@ import { useNavigate } from "react-router-dom";
           isbn: "",
           author: "",
           description: "",
-          published_date: "",
-          publisher: "",
+          issued_Date:"",
+          recipient:"",
+          contact_no:"",
         });
         // Push to /
         navigate("/");
@@ -48,7 +50,7 @@ import { useNavigate } from "react-router-dom";
           <div className="col-md-8 m-auto">
             <br />
             <Link to="/" className="btn btn-outline-warning float-left">
-              Show BooK List
+              Show Book List
             </Link>
           </div>
           <div className="col-md-10 m-auto">
@@ -100,12 +102,24 @@ import { useNavigate } from "react-router-dom";
               </div>
               <br />
               <div className="form-group">
+              <label htmlFor="issued_Date">Issued Date</label>
                 <input
-                  type="date"
-                  placeholder="published_date"
-                  name="published_date"
+                type="date"
+                placeholder="Issued Date"
+                name="issued_Date"
+                className="form-control"
+                value={book.issued_Date}
+                onChange={onChange}
+                />
+            </div>
+              <br />
+              <div className="form-group">
+                <input
+                  type="text"
+                  placeholder="Recipient"
+                  name="recipient"
                   className="form-control"
-                  value={book.published_date}
+                  value={book.recipient}
                   onChange={onChange}
                 />
               </div>
@@ -113,10 +127,10 @@ import { useNavigate } from "react-router-dom";
               <div className="form-group">
                 <input
                   type="text"
-                  placeholder="Publisher of this Book"
-                  name="publisher"
+                  placeholder="Contact Number"
+                  name="contact_no"
                   className="form-control"
-                  value={book.publisher}
+                  value={book.contact_no}
                   onChange={onChange}
                 />
               </div>

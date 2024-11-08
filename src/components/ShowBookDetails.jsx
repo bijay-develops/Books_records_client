@@ -53,16 +53,21 @@ function ShowBookDetails(props) {
           </tr>
           <tr>
             <th scope='row'>4</th>
-            <td>Publisher</td>
-            <td>{book.publisher}</td>
+            <td>Recipient</td>
+            <td>{book.recipient}</td>
           </tr>
           <tr>
             <th scope='row'>5</th>
-            <td>Published Date</td>
-            <td>{book.published_date}</td>
+            <td>Contact Number</td>
+            <td>{book.contact_no}</td>
           </tr>
           <tr>
             <th scope='row'>6</th>
+            <td>Issued Date</td>
+            <td>{book.issued_Date}</td>
+          </tr>
+          <tr>
+            <th scope='row'>7</th>
             <td>Description</td>
             <td>{book.description}</td>
           </tr>

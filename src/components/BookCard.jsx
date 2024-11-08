@@ -9,7 +9,7 @@ const BookCard = ({book}) => {
   return (
     <div className='card-container'>
       <img
-        src='https://images.unsplash.com/photo-1495446815901-a7297e633e8d'
+        src='https://images.pexels.com/photos/17492047/pexels-photo-17492047/free-photo-of-bible-on-a-lectern.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
         alt='Books'
         height={200}
       />

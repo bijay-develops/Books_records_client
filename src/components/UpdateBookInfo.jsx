@@ -6,12 +6,13 @@ import '../App.css';
 
 function UpdateBookInfo(props) {
   const [book, setBook] = useState({
-    title: '',
-    isbn: '',
-    author: '',
-    description: '',
-    published_date: '',
-    publisher: '',
+    title: "",
+    isbn: "",
+    author: "",
+    description: "",
+    issued_Date:"",
+    recipient:"",
+    contact_no:"",
   });
 
   const { id } = useParams();
@@ -26,8 +27,9 @@ function UpdateBookInfo(props) {
           isbn: res.data.isbn,
           author: res.data.author,
           description: res.data.description,
-          published_date: res.data.published_date,
-          publisher: res.data.publisher,
+          issued_Date: res.data.issued_Date,
+          recipient: res.data.recipient,
+          contact_no: res.data.contact_no,
         });
       })
       .catch((err) => {
@@ -47,8 +49,9 @@ function UpdateBookInfo(props) {
       isbn: book.isbn,
       author: book.author,
       description: book.description,
-      published_date: book.published_date,
-      publisher: book.publisher,
+      issued_Date: book.issued_Date,
+      recipient: book.recipient,
+      contact_no: book.contact_no,
     };
 
     axios
@@ -131,31 +134,42 @@ function UpdateBookInfo(props) {
             </div>
             <br />
 
-            <div className='form-group'>
-              <label htmlFor='published_date'>Published Date</label>
-              <input
-                type='text'
-                placeholder='Published Date'
-                name='published_date'
-                className='form-control'
-                value={book.published_date}
+            <div className="form-group">
+              <label htmlFor="issued_Date">Issued Date</label>
+                <input
+                type="date"
+                placeholder="Issued Date"
+                name="issued_Date"
+                className="form-control"
+                value={book.issued_Date}
                 onChange={onChange}
-              />
+                />
             </div>
             <br />
 
-            <div className='form-group'>
-              <label htmlFor='publisher'>Publisher</label>
-              <input
-                type='text'
-                placeholder='Publisher of the Book'
-                name='publisher'
-                className='form-control'
-                value={book.publisher}
-                onChange={onChange}
-              />
-            </div>
+            <div className="form-group">
+                <input
+                  type="text"
+                  placeholder="Recipient"
+                  name="recipient"
+                  className="form-control"
+                  value={book.recipient}
+                  onChange={onChange}
+                />
+              </div>
             <br />
+
+            <div className="form-group">
+                <input
+                  type="text"
+                  placeholder="Contact Number"
+                  name="contact_no"
+                  className="form-control"
+                  value={book.contact_no}
+                  onChange={onChange}
+                />
+              </div>
+              <br />
 
             <button
               type='submit'
