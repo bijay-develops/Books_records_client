@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const CreateBook = (props) => {
+  const CreateBook = (props) => {
   const navigate = useNavigate();
 
   const [book, setBook] = useState({
@@ -58,7 +58,7 @@ const CreateBook = (props) => {
                 <input
                   type="text"
                   placeholder="Title of the Book"
-                  name="title"
+                  name="title" 
                   className="form-control"
                   value={book.title}
                   onChange={onChange}
