@@ -3,6 +3,7 @@ import '../App.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import BookCard from './BookCard';
+import sosCover from '../img/sos-cover.jpg';
 
 function ShowBookList() {
   const [books, setBooks] = useState([]);
@@ -24,11 +25,13 @@ function ShowBookList() {
       : books.map((book, k) => <BookCard book={book} key={k} />);
 
   return (
+    
     <div className='ShowBookList'>
       <div className='container'>
         <div className='row'>
           <div className='col-md-12'>
             <br />
+  
             <h2 className='display-4 text-center'>Books List</h2>
           </div>
 
@@ -48,6 +51,7 @@ function ShowBookList() {
         <div className='list'>{bookList}</div>
       </div>
     </div>
+    
   );
 }
 

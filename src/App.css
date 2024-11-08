@@ -1,32 +1,39 @@
 *{
   justify-content: center;
-  /* padding: 20px; */
   width: 100%;
+}
+
+.book-image{
+  padding: 10px;
+  border-radius: 30px;
 }
 
 .CreateBook {
   justify-content: center;
-  background-color: #2c5035;
+  background-color: #196573;
   min-height: 100vh;
-  padding: 200px;
+  padding: 500px;
   padding-top: 20px;
   color: white;
 }
 
 .ShowBookDetails {
-  background-color: #2c5035;
+  background-color: #196573;
   min-height: 100vh;
   color: white;
 }
 
 .UpdateBookInfo {
-  background-color: #2c5035;
+  background-color: #196573;
+  padding: 400px;
+  justify-content: center;
+  padding-top: 10px;
   min-height: 100vh;
   color: white;
 }
 
 .ShowBookList {
-  background-color: #2c5035;
+  background-color: #196573;
   height: 100%;
   width: 100%;
   min-height: 100vh;
@@ -45,9 +52,10 @@
 
 .card-container {
   width: 250px;
-  border: 1px solid rgba(0,0,.125);
+  background-color: #03343c;
+  border: 1px solid #ffc107;
   margin: 0 auto;
-  border-radius: 5px;
+  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -56,17 +64,19 @@
   padding: 10px;
 }
 
-.desc h2 {
-  font-size: 1em;
-  font-weight: 400;
+.desc h2, a{
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
 }
 
-.desc h3, p {
-  font-weight: 300;
+.desc p {
+  font-weight: 400;
 }
 
 .desc h3 {
   color: #6c757d;
   font-size: 1em;
+  font-weight: 700;
   padding: 10px 0 10px 0;
 }

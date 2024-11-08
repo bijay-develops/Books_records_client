@@ -34,7 +34,7 @@ function ShowBookDetails(props) {
 
   const BookItem = (
     <div>
-      <table className='table table-hover table-dark'>
+      <table className='table table-dark table-bordered table-striped w-auto'>
         <tbody>
           <tr>
             <th scope='row'>1</th>
