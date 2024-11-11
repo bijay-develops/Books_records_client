@@ -3,7 +3,7 @@ import '../App.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import BookCard from './BookCard';
-import sosCover from '../img/sos-cover.jpg';
+// import sosCover from '../img/sos-cover.jpg';
 
 function ShowBookList() {
   const [books, setBooks] = useState([]);
