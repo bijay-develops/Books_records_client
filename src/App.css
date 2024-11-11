@@ -12,7 +12,7 @@
   justify-content: center;
   background-color: #196573;
   min-height: 100vh;
-  padding: 500px;
+  /* padding: 500px; */
   padding-top: 20px;
   color: white;
 }
@@ -25,7 +25,7 @@
 
 .UpdateBookInfo {
   background-color: #196573;
-  padding: 400px;
+  /* padding: 400px; */
   justify-content: center;
   padding-top: 10px;
   min-height: 100vh;
