@@ -12,7 +12,7 @@ function ShowBookDetails(props) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8082/api/books/${id}`)
+      .get(`https://books-records.onrender.com/api/books/${id}`)
       .then((res) => {
         setBook(res.data);
       })
@@ -23,7 +23,7 @@ function ShowBookDetails(props) {
 
   const onDeleteClick = (id) => {
     axios
-      .delete(`http://localhost:8082/api/books/${id}`)
+      .delete(`https://books-records.onrender.com/api/books/${id}`)
       .then((res) => {
         navigate('/');
       })
